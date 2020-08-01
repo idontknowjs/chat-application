@@ -1,0 +1,63 @@
+.form {
+  display: flex;
+  border-top: 2px solid #D3D3D3;
+  /* margin: 10px 10px;
+  background-image: url("../Messages/gray.jpg");
+  background-size: cover;
+  border-radius: 30px; */
+}
+
+/* TODO:
+.close {
+  display: none;
+} */
+
+.input {
+  border: none;
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+}
+
+.example {
+  background-color: grey;
+  border-radius: 8px !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.microphone {
+  color: grey;
+  margin-right: 7.5px;
+  margin-top: 18px;
+}
+
+.smile {
+  color: grey;
+  margin-left: 11.5px;
+  margin-top: 15px;
+}
+
+
+.sendButton {
+
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #2979FF;
+  padding: 10px 20px;
+  display: inline-block;
+  border: none;
+  /* border-radius: 30px; */
+  width: 20%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .smile {
+    display: none;
+  }
+}

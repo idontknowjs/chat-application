@@ -1,0 +1,126 @@
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  color: white;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.textContainer h1 {
+  /* text-align: center; */
+  margin-bottom: 0px;
+}
+
+.title {
+  font-family: 'Play', sans-serif;
+  font-size: 80px;
+  margin-top: 60px;
+}
+
+/* .title :not(span) {
+  color: 60px;
+} */
+
+.title span {
+  font-size: 50px;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: rgb(4, 18, 31);
+}
+
+.standing {
+  text-align: center;
+  margin-left: 170px;
+}
+
+
+.activeContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50%;
+}
+
+.activeItem {
+  display: flex;
+  align-items: center;
+}
+
+.activeItem:nth-child(1)::after {
+  content: url(./crown.png);
+}
+
+.activeContainer img {
+  padding-left: 10px;
+}
+
+#top-left {
+  animation: slide1 4s infinite ease;
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(40px)
+  }
+
+  50% {
+    transform: translateX(0px)
+  }
+
+  75% {
+    transform: translateX(0px);
+  }
+
+  1000% {
+    transform: translateX(0)
+  }
+}
+
+#mid-right {
+  animation: slide2 4s infinite ease;
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(0)
+  }
+
+  50% {
+    transform: translateX(0px)
+  }
+
+  75% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    transform: translateX(0px)
+  }
+}
+
+/* #bottom-left {
+  animation: slide3 0.5s 7.5s 1 normal backwards ease-out;
+} */
+
+/* @keyframes slide3 {
+  from {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(40px);
+  }
+} */
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .textContainer {
+    display: none;
+  }
+}

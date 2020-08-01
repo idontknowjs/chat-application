@@ -1,0 +1,127 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+
+  /* font-family: 'Dancing Script', cursive; */
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(225, 226, 226);
+}
+
+.logo {
+  transform: rotate(90);
+  position: absolute;
+  width: 70px;
+  top: 50px;
+  left: 50px;
+  height: 70px;
+}
+
+.chatGif {
+  text-align: center;
+  top: 10px;
+  width: 332px;
+  height: 250px;
+  position: absolute;
+}
+
+.titleJoin {
+  display: none;
+}
+
+.joinInnerContainer {
+  padding-top: 190px;
+  width: 20%;
+}
+
+.joinInput {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.heading {
+  color: rgb(7, 5, 5);
+  margin: 20px 0;
+  font-size: 3.5em;
+  font-family: 'Pacifico', cursive;
+  /* padding-bottom: 10px; */
+  /* border-bottom: 2px solid white; */
+}
+
+.button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #22a9bb;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  width: 100%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    overflow: hidden;
+  }
+
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .chatGif {
+    display: none;
+  }
+
+  .logo {
+    top: 20px;
+    left: 20px;
+  }
+
+  /* .titleJoin {
+    display: initial;
+    font-family: 'Play', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    margin-top: 30px;
+    -webkit-text-stroke: 1.25px white;
+  }
+
+  .titleJoin span {
+    font-size: 40px;
+    -webkit-text-stroke: 1.25px rgb(255, 255, 255);
+    color: rgb(4, 18, 31);
+  } */
+
+  .joinInnerContainer {
+    width: 90%;
+    padding-top: 0px;
+  }
+
+  .heading {
+    margin-top: 60px;
+  }
+}

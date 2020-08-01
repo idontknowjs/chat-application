@@ -1,0 +1,131 @@
+.infoBar {
+  font-family: 'Abel', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2979FF;
+  border-radius: 4px 4px 0 0;
+  height: 60px;
+  width: 100%;
+}
+
+
+.leftInnerContainer {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  color: white;
+}
+
+.rightInnerContainer {
+  display: flex;
+  flex: 0.5;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.onlineIcon {
+  margin-right: 5%;
+}
+
+.onlinePeople {
+  color: aliceblue;
+  margin-right: 15px;
+  /* FIXME: */
+  /* display: none; */
+}
+
+.activeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.activeItem1 {
+  background: #fefefe;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+.navBar {
+  position: absolute;
+  background-color: #fefefe;
+  border-radius: 20%;
+  z-index: 1;
+  left: 285px;
+  top: 87px;
+  width: 200px;
+}
+
+.activeItem1:first-child {
+  font-family: 'Abel', sans-serif;
+  border-top: #2979FF dotted 0.3px;
+}
+
+.activeItem1:nth-child(1) {
+  border: initial;
+  padding: 15px;
+}
+
+.activeItem1:nth-child(even) {
+  border: initial;
+  padding: 15px;
+  border: #2979FF dotted 0.3px;
+}
+
+.activeItem1:nth-child(odd) {
+  border-left: #2979FF dotted 0.3px;
+  border-right: #2979FF dotted 0.3px;
+  padding: 15px;
+
+}
+
+.activeItem1:nth-child(1)::after {
+  content: none
+}
+
+.activeItem1:nth-child(2)::after {
+  content: url(./crown.png);
+}
+
+.activeItem1:nth-child(2) {
+  padding: initial;
+}
+
+.activeItem1:nth-child(-1) {
+  background-color: khaki;
+  border: initial;
+  padding: 15px;
+}
+
+.activeItem1:last-child {
+  border-bottom: #2979FF dotted 0.3px;
+}
+
+.activeContainer1 img {
+  padding-left: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+  .onlinePeople {
+    color: aliceblue;
+    margin-right: 15px;
+    display: initial;
+  }
+
+  /* FIXME: */
+  .navBar {
+    position: absolute;
+    background-color: #fefefe;
+    z-index: 1;
+    top: 60px;
+    left: 140px;
+    width: 200px;
+  }
+}

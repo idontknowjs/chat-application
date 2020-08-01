@@ -1,0 +1,10 @@
+.messages {
+  background-image: url("./gray.jpg");
+  background-size: cover;
+  padding: 5% 0;
+  overflow: auto;
+  /* Add scroll bars if necessary  */
+  flex: auto;
+}
+
+/* Chat-App\client\src\icons\gray.jpg */
