@@ -1,3 +1,5 @@
+(CLIENT SIDE ONLY)
+
 This is a real time, bidirectional and event-based communication application where people can connect and chat with each other in rooms.
 
 Features to be added in future: 
